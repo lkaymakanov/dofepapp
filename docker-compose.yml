@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  web-page:
+    build: app/
+    ports:
+      - "8080:80"
+    deploy: 
+      mode: replicated
+      replicas: 3
